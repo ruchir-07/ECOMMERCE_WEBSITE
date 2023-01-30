@@ -4,7 +4,7 @@ import { Layout } from '@/components'
 import { StateContext } from '@/context/StateContext'
 import { Toaster } from 'react-hot-toast'
 
-export default function App({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <StateContext>
       <Layout>
@@ -14,3 +14,5 @@ export default function App({ Component, pageProps }) {
     </StateContext>
   )
 }
+
+export default MyApp
